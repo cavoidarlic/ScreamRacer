@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    text-align: center;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff4444;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.instructions {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ffaa00;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    border: 3px solid #444;
+    background: #222;
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 20px 10px;
+    background: linear-gradient(45deg, #ff4444, #ff6666);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6666, #ff8888);
+    transform: scale(1.05);
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ff4444;
+}
+
+.hidden {
+    display: none;
+}
